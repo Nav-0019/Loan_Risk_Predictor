@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Standard config for Vercel and Firebase Web Frameworks
+  // Standard config - optimized for Vercel deployment
 };
 
 export default nextConfig;
