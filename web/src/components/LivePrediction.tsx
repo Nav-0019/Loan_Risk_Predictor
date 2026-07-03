@@ -18,9 +18,8 @@ export default function LivePrediction() {
     const features = Object.fromEntries(formData.entries());
 
     try {
-      // Send to FastAPI / Hugging Face Spaces (Using local proxy/URL for now)
-      // In production, this would be the hugging face space URL e.g. "https://navne-loan-predictor.hf.space/predict"
-      const res = await fetch("http://localhost:7860/predict", {
+      // Send to Hugging Face Spaces API
+      const res = await fetch("https://shubham0019-loan-prediction.hf.space/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ features })
